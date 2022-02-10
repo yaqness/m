@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+.itd-input {
+    width: 350px;
+    position: relative;
+    top: 20px;
+}
+
+.container {
+    margin-top: 80px;
+    height: 450px;
+    border: 1px black solid;
+    padding: 30px 30px 30px 30px;
+    width: 400px;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.itd-btn {
+    margin-top: 30px;
+}
+
+.uspex {
+    color: rgb(212, 0, 0);
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    bottom: 180px;
+    font-size: 1.3rem;
+}
+
+.itd-link {
+    position: relative;
+    top: 45px;
+    color: rgb(0, 122, 223);
+    text-decoration: none;
+    font-weight: 650;
+}
+
+.itd-guest {
+    position: relative;
+    top: 30px;
+    font-size: 0.85rem;
+}
+
+.itd-check {
+    position: relative;
+    top: 17px;
+}
+
+.itd-label {
+    position: relative;
+    right: 57px;
+}

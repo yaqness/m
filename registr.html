@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap;-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/registr-style.css">
+    <title>Soap</title>
+    <link rel="stylesheet" href="assets/css/animation.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-codes.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-embedded.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-ie7.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-ie7-codes.css" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Monki</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse navbar-itd" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Calculator</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="https://instagram.com">Instagram</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://facebook.com">Facebook</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="settings.html">Donation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registr.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <div class="container">
+            <form name="publish">
+                <h3 class="itd-login-text">Registration</h3>
+                <div class="input-group mb-3 itd-input">
+                    <input type="text" class="form-control" name="name" maxlength="14" placeholder="Name" aria-label="Name" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3 itd-input">
+                    <input type="text" class="form-control" maxlength="15" name="message" placeholder="Username" aria-label="Username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3 itd-input">
+                    <input type="password" class="form-control" name="password" maxlength="14" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                </div>
+                <div class="form-check itd-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                    <label class="form-check-label itd-label" for="flexCheckDefault">
+                      Я соглашаюсь с правилами
+                    </label>
+                </div>
+                <input type="submit" class="btn btn-dark itd-btn" value="Создать">
+            </form>
+            <h6 class="itd-guest text-secondary">Работаете на чужом компьютере? Включите гостевой режим.</h6>
+            <div class="row">
+                <a href="login.html" class="text-center link-primary itd-link">Войти</a>
+            </div>
+        </div>
+    </center>
+
+
+    <!--JavaScript; -->
+    <script src="assets/js/variables.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/registr.js "></script>
+
+</body>
+
+</html>

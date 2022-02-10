@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap;-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calculator-style.css">
+    <title>Soap</title>
+    <link rel="stylesheet" href="assets/css/animation.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-codes.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-embedded.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-ie7.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fontello-ie7-codes.css" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Monki</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+            <div class="collapse navbar-collapse navbar-itd" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="calculator.html">Calculator</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Menu
+                 </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="https://instagram.com">Instagram</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://facebook.com">Facebook</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="settings.html">Donation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="registr.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main code-->
+    <div class="container-fluid pole col-12 d-none d-md-block">
+        <div class="main-answer">
+            <p class="answer">0</p>
+            <p class="s-answer">=5</p>
+        </div>
+    </div>
+    <center>
+        <div class="line d-none d-md-block"></div>
+    </center>
+    <div class="n-pad d-none d-md-block">
+        <div class="first">
+            <span class="numbers">7</span>
+            <span class="numbers">8</span>
+            <span class="numbers">9</span>
+            <div class="actions highlite" style="display: inline-block;"><i class="icon-cancel-alt-filled"></i></div>
+        </div>
+        <div class="second">
+            <span class="numbers">4</span>
+            <span class="numbers">5</span>
+            <span class="numbers">6</span>
+            <div class="actions highlite rotated" style="display: inline-block;"><i class="icon-plus"></i></div>
+        </div>
+        <div class="third">
+            <span class="numbers">1</span>
+            <span class="numbers">2</span>
+            <span class="numbers">3</span>
+            <div class="actions highlite" style="display: inline-block;"><i class="icon-minus"></i></div>
+        </div>
+        <div class="fourth">
+            <span class="numbers highlite">#</span>
+            <span class="numbers">0</span>
+            <span class="numbers">.</span>
+            <div class="actions highlite" style="display: inline-block;"><i class="icon-plus"></i></div>
+        </div>
+
+    </div>
+
+
+    <!--JavaScript; -->
+    <script src="assets/js/variables.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/calculator-script.js "></script>
+</body>
+
+</html>

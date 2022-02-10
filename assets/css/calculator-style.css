@@ -1,0 +1,79 @@
+.pole {
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+.line {
+    background-color: rgb(73, 73, 73);
+    height: 0.09px;
+    opacity: 0.3;
+    width: 97%;
+}
+
+.answer {
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.s-answer {
+    position: relative;
+    bottom: 30px;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.main-answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.numbers {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.actions {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-radius: 50%;
+    transition: 0.5s;
+}
+
+.numbers:hover,
+.actions:hover {
+    background-color: rgb(177, 177, 177, 0.4);
+}
+
+.second,
+.third,
+.fourth {
+    margin-top: 28px;
+}
+
+.first {
+    margin-top: 20px;
+}
+
+.n-pad {
+    position: relative;
+    text-align: center;
+    height: 330px;
+}
+
+.highlite {
+    color: rgb(255, 83, 15);
+}
+
+.rotated {
+    transform: rotate(45deg);
+}
