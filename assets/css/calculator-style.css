@@ -1,6 +1,10 @@
+body {
+    background-color: black;
+}
+
 .pole {
     height: 250px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .line {
@@ -8,19 +12,22 @@
     height: 0.09px;
     opacity: 0.3;
     width: 97%;
+    position: relative;
+    bottom: 15px;
 }
 
-.answer {
-    font-size: 5rem;
+#answer {
+    font-size: 4rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
+    color: white;
 }
 
-.s-answer {
+#s-answer {
     position: relative;
     bottom: 30px;
     font-size: 20px;
-    color: rgb(65, 65, 65);
+    color: rgb(199, 199, 199);
 }
 
 .main-answer {
@@ -31,49 +38,142 @@
 }
 
 .numbers {
-    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    margin: 10px;
-    padding: 10px 20px 10px 20px;
     border-radius: 50%;
     transition: 0.5s;
+    background: rgba(85, 85, 85, 0.4);
+    display: inline-block;
+    text-align: center;
 }
 
-.actions {
-    font-size: 1.7rem;
-    cursor: pointer;
-    position: relative;
-    padding: 10px 10px 10px 10px;
-    -webkit-border-radius: 50%;
-    transition: 0.5s;
+.numbers:hover {
+    filter: brightness(120%)
 }
 
-.numbers:hover,
-.actions:hover {
-    background-color: rgb(177, 177, 177, 0.4);
+.numbers:active {
+    filter: brightness(70%)
 }
 
 .second,
 .third,
 .fourth {
-    margin-top: 28px;
+    margin-top: 10px;
 }
 
 .first {
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .n-pad {
+    user-select: none;
     position: relative;
+    top: 5px;
     text-align: center;
-    height: 330px;
+}
+
+.main {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 8px;
+    position: relative;
+    left: 550px;
+    grid-template-areas: "ac cancel percent divide" "seven eight nine multiple" "four five six minus" "one two three plus" "zeros zeros point equal";
 }
 
 .highlite {
-    color: rgb(255, 83, 15);
+    background-color: #ff9501;
+    color: white;
+}
+
+.gray {
+    background-color: #a6a6a6;
+    color: white;
 }
 
 .rotated {
     transform: rotate(45deg);
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zeros;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.point {
+    grid-area: point;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.multiple {
+    grid-area: multiple;
+}
+
+.cancel {
+    grid-area: cancel;
+}
+
+.ac {
+    grid-area: ac;
+}
+
+.percent {
+    grid-area: percent;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.divide {
+    grid-area: divide;
 }

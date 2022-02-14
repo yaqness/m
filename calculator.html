@@ -65,41 +65,44 @@
     </nav>
 
     <!--Main code-->
-    <div class="container-fluid pole col-12 d-none d-md-block">
+    <div class="container-fluid pole col-12 ">
         <div class="main-answer">
-            <p class="answer">0</p>
-            <p class="s-answer">=5</p>
+            <p id="answer">0</p>
+            <p id="s-answer"></p>
         </div>
     </div>
     <center>
-        <div class="line d-none d-md-block"></div>
+        <div class="line "></div>
     </center>
-    <div class="n-pad d-none d-md-block">
-        <div class="first">
-            <span class="numbers">7</span>
-            <span class="numbers">8</span>
-            <span class="numbers">9</span>
-            <div class="actions highlite" style="display: inline-block;"><i class="icon-cancel-alt-filled"></i></div>
-        </div>
-        <div class="second">
-            <span class="numbers">4</span>
-            <span class="numbers">5</span>
-            <span class="numbers">6</span>
-            <div class="actions highlite rotated" style="display: inline-block;"><i class="icon-plus"></i></div>
-        </div>
-        <div class="third">
-            <span class="numbers">1</span>
-            <span class="numbers">2</span>
-            <span class="numbers">3</span>
-            <div class="actions highlite" style="display: inline-block;"><i class="icon-minus"></i></div>
-        </div>
-        <div class="fourth">
-            <span class="numbers highlite">#</span>
-            <span class="numbers">0</span>
-            <span class="numbers">.</span>
-            <div class="actions highlite" style="display: inline-block;"><i class="icon-plus"></i></div>
-        </div>
+    <div class="n-pad ">
+        <div class="main col-4">
 
+            <div class="numbers ac text-white gray" id="ac" onclick="getAc()">AC</div>
+            <div class="numbers equal highlite" id="equal" style="font-size: 2.3rem;" onclick="getEqual()">=</div>
+            <div class="numbers percent text-white gray" id="percent" onclick="getPercent()">%</div>
+            <div class="numbers divide highlite" id="divide" onclick="getDivide()" style="font-size: 3rem;">÷</div>
+
+            <div class="numbers seven text-white" id="seven" onclick="getSeven()">7</div>
+            <div class="numbers eight text-white" id="eight" onclick="getEight()">8</div>
+            <div class="numbers nine text-white" id="nine" onclick="getNine()">9</div>
+            <div class="numbers cancel highlite gray" id="cancel" onclick="getCancel()"><i class="icon-cancel-alt-filled"></i></div>
+
+            <div class="numbers four text-white" id="four" onclick="getFour()">4</div>
+            <div class="numbers five text-white" id="five" onclick="getFive()">5</div>
+            <div class="numbers six text-white" id="six" onclick="getSix()">6</div>
+            <div class="numbers multiple highlite rotated" onclick="getMultiple()" style="font-size: 3.2rem;" id="multiple">+</div>
+
+
+            <div class="numbers one text-white" id="one" onclick="getOne()">1</div>
+            <div class="numbers two text-white" id="two" onclick="getTwo()">2</div>
+            <div class="numbers three text-white" id="three" onclick="getThree()">3</div>
+            <div class="numbers minus highlite" onclick="getMinus()" style="font-size: 3rem;" id="minus">−</div>
+
+            <div class="numbers zero text-white" id="zero" onclick="getZero()">0</div>
+            <div class="numbers point text-white point" id="point" onclick="getPoint()">.</div>
+            <div class="numbers plus highlite plus" onclick="getPlus()" style="font-size: 3rem;" id="plus">+</div>
+
+        </div>
     </div>
 
 
