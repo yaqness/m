@@ -8,9 +8,16 @@ function getAnswer() {
     } else {
         lom = lom.replace("÷", "/")
         lom = lom.replace("×", "*")
+        lom = lom.replace("%", "/100")
         let newLom = eval(lom)
         document.getElementById('s-answer').innerHTML = "=" + newLom
     }
+    if (document.getElementById('answer').innerHTML == "0") {
+        document.getElementById('ac').innerHTML = "AC"
+    } else {
+        document.getElementById('ac').innerHTML = "C"
+    }
+
 
 }
 
@@ -159,6 +166,7 @@ function getPoint() {
 function getAc() {
     document.getElementById('answer').innerHTML = "0";
     document.getElementById('s-answer').innerHTML = "=0";
+    getAnswer()
 }
 
 function getCancel() {
@@ -187,7 +195,7 @@ function getMinus() {
     let ans = document.getElementById('answer').innerHTML;
     if ((ans.slice(-1) != "÷" && ans.slice(-1) != "-" && ans.slice(-1) != "+" && ans.slice(-1) != "×")) {
         if ((ans == "0")) {
-            document.getElementById('answer').innerHTML = "-";
+            document.getElementById('answer').innerHTML = "0";
         } else {
             document.getElementById('answer').innerHTML += "-"
         }
@@ -199,7 +207,7 @@ function getDivide() {
     let ans = document.getElementById('answer').innerHTML;
     if ((ans.slice(-1) != "÷" && ans.slice(-1) != "-" && ans.slice(-1) != "+" && ans.slice(-1) != "×")) {
         if ((ans == "0")) {
-            document.getElementById('answer').innerHTML = "÷";
+            document.getElementById('answer').innerHTML = "0";
         } else {
             document.getElementById('answer').innerHTML += "÷"
         }
@@ -226,6 +234,8 @@ function getPercent() {
             document.getElementById('answer').innerHTML = "0";
         } else {
             document.getElementById('answer').innerHTML += "%"
+
+
         }
     }
     getAnswer()
